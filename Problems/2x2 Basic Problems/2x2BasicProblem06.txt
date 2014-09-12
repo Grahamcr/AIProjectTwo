@@ -1,0 +1,93 @@
+2x2 Basic Problem 06
+2x2
+3
+A
+	A
+		shape:triangle
+		fill:yes
+		angle:0
+	B
+		shape:triangle
+		fill:no
+		above:A
+		angle:180
+B
+	C
+		shape:triangle
+		fill:no
+		angle:270
+	D
+		shape:triangle
+		fill:no
+		above:C
+		angle:90
+C
+	E
+		shape:triangle
+		fill:no
+		angle:270
+	F
+		shape:triangle
+		fill:yes
+		above:E
+		angle:90
+1
+	G
+		shape:triangle
+		fill:yes
+		angle:0
+	H
+		shape:triangle
+		fill:no
+		above:G
+		angle:180
+2
+	I
+		shape:triangle
+		fill:no
+		angle:270
+	J
+		shape:triangle
+		fill:yes
+		above:I
+		angle:90
+3
+	K
+		shape:triangle
+		fill:no
+		angle:0
+	L
+		shape:triangle
+		fill:no
+		above:K
+		angle:180
+4
+	M
+		shape:triangle
+		fill:yes
+		angle:270
+	N
+		shape:triangle
+		fill:no
+		above:M
+		angle:90
+5
+	O
+		shape:triangle
+		fill:yes
+		angle:180
+	P
+		shape:triangle
+		fill:no
+		above:O
+		angle:0
+6
+	Q
+		shape:triangle
+		fill:no
+		angle:270
+	R
+		shape:triangle
+		fill:no
+		above:Q
+		angle:90
