@@ -34,6 +34,11 @@ public class FillerValue {
 		this.val = val;
 	}
 
+	@Override
+	public String toString() {
+		return "[" + name + ", " + val + "]";
+	}
+
 	/***************************************************
 	 * Getters and Setters for Instance Variables
 	 ***************************************************/

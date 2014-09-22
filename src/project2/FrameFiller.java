@@ -19,6 +19,13 @@ public class FrameFiller {
 	/**Attributes which belong to this object ***/
 	private List<FillerValue> attributes;
 	
+	
+	@Override
+	public String toString() {
+		return "[name=" + name + ", attributes=" + attributes + "]";
+	}
+
+
 	/****************************************************
 	 * Default Constructor which is responsible for
 	 * instantiating the List

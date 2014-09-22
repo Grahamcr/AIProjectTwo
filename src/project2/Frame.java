@@ -8,6 +8,12 @@ public class Frame {
 	private List<FrameFiller> fillers;
 	private String name;
 	
+	
+	@Override
+	public String toString() {
+		return "Frame [" + fillers + ", name=" + name + "]";
+	}
+
 	public Frame(String name) {
 		fillers = new ArrayList<FrameFiller>();
 		this.name = name;
