@@ -18,15 +18,20 @@ import project2.FrameFiller;
 
 
 /*******************************************************************************
+ * RavenUtil is a Service class which is responsible for doing most of the 
+ * calculations required when solving a Raven's Problem.  The Utility is capable
+ * of completing calculations using Semantic Networks, Frames, Means-End 
+ * Reduction and Generate & Test.
  * 
- * 
+ * @author Craig Graham
  *******************************************************************************/
 public class RavenUtil {
 
+	/*** Constant to mark when an object in a frame is deleted */
 	private static final String DELETEDOBJECT = "DELETED";
 
 	/*******************************************************************************
-	 * 
+	 * Default empty constructor. 
 	 * 
 	 *******************************************************************************/
 	public RavenUtil() {
@@ -34,10 +39,17 @@ public class RavenUtil {
 	}
 	
 	/******************************************************************************
-	 * This method counts on pass-by-reference! 
+	 * Using Frames to represent a Raven's Figure, add the transformations or
+	 * attribute changes the Figure underwent horizontally and when 
+	 * applicable, vertically. 
+	 * This method counts on pass-by-reference to make changes to the object
+	 * calcFrame. 
 	 * 
-	 * @param frame
-	 * @param transitions
+	 * @param frame - The starting point frame (ie. Raven's Figure A)
+	 * @param transitions - The transformations the starting frame underwent 
+	 * 						in the problem set.
+	 * @param calcFrame - The Raven's Frame which will be the "calculated"
+	 * 					  answer for the problem. 
 	 *****************************************************************************/
 	public void applyTransformation(Frame frame, TransitionList transitions, Frame calcFrame) {
 		
