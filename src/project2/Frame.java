@@ -3,27 +3,44 @@ package project2;
 import java.util.ArrayList;
 import java.util.List;
 
+/********************************************************************
+ * The Frame class is used to represent the Raven's Figure using the
+ * data representation method of Frames. Each frame contains a name
+ * and a list of filler-value pairs
+ *
+ *@author Craig Graham
+**********************************************************************/
 public class Frame {
 
+	/*** List of fillers and their values for this frame */
 	private List<FrameFiller> fillers;
+	
+	/*** Name of the frame */
 	private String name;
 	
-	
-	@Override
-	public String toString() {
-		return "Frame [" + fillers + ", name=" + name + "]";
-	}
 
+	/***************************************************************
+	 * Constructor with name 
+	****************************************************************/
 	public Frame(String name) {
 		fillers = new ArrayList<FrameFiller>();
 		this.name = name;
 	}
 
+	/***************************************************************
+	 * Default constructor
+	****************************************************************/
 	public Frame() {
 		fillers = new ArrayList<FrameFiller>();
 		this.name = name;
 	}
 	
+	
+	/***************************************************************
+	 *
+	 * Setters and Getters for class instance variables 
+	 *
+	****************************************************************/
 	public void addFillers(List<FrameFiller> toAdd) {
 		fillers.addAll(toAdd);		
 	}
@@ -57,7 +74,11 @@ public class Frame {
 	public void remove(FrameFiller filler) {
 		fillers.remove(filler);
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Frame [" + fillers + ", name=" + name + "]";
+	}
 
 	
 }
